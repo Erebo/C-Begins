@@ -50,7 +50,7 @@ int main() {
 }
 // if(condition 1){---------
 //--------} 
-//elseif(condition 2){---------
+//else if(condition 2){---------
 //-----------}
 //else(condition 3){----------
 //-----------}
