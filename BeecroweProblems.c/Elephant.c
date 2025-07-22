@@ -1,4 +1,5 @@
-/*#include<stdio.h>
+/*
+#include<stdio.h>
 int main(){
     int n,m,count=0;
     scanf("%d",&n);
@@ -9,7 +10,8 @@ int main(){
     printf("%d",count+m);
 
     return 0;
-}*/
+}
+*/
 // Now let's think the elephant can only walk the even numbers 2,4,6;
 #include<stdio.h>
 int main(){
