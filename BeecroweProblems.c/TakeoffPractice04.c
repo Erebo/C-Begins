@@ -1,4 +1,4 @@
-// AB : 
+// AB :
 /**#include<stdio.h>
 int main(){
     int countA=0;
@@ -63,7 +63,7 @@ if(b<=a && c<=a && d<=a){
     return 0;
 }
 **/
-//1≤N≤50,1≤K≤50,5≤X≤10
+// 1≤N≤50,1≤K≤50,5≤X≤10
 /**#include<stdio.h>
 int main(){
 int N,K,X,result;
@@ -79,8 +79,8 @@ result=(((N-K)+1)*X)*2;
 printf("%d\n",result);
     return 0;
 }**/
-//AF : 
-//n,a,b,c(3≤ n ≤ 10^5 ;1≤b<a<c≤n)
+// AF :
+// n,a,b,c(3≤ n ≤ 10^5 ;1≤b<a<c≤n)
 /**#include<stdio.h>
 int main(){
     long long result;
@@ -154,7 +154,7 @@ printf("%.6f",result);
 
     return 0;
 }*/
-// AH: 
+// AH:
 /**#include<stdio.h>
 int main(){
 int a,b,c,d,e;
@@ -326,7 +326,7 @@ int main(){
         } else{
             printf("NO\n");
         }
-     
+
     return 0;
 }*/
 /*#include<stdio.h>
@@ -356,4 +356,37 @@ if (count >= 1){
 }
     return 0;
 }*/
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int arr[3];
+    int count=0;
+    for (int k = 0; k < n; k++)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            scanf("%d", &arr[i]);
+        }
+        for (int j = 0; j < 3; j++)
+        {
+            for (int i = j + 1; i < 3; i++)
+            {
+                if (arr[i] + arr[j] >= 10)
+                {
+                    count += 1;
+                    break;
+                }               
+            }
+        }
+            if(count>=1){
+                printf("YES\n");
+            } else{
+                printf("NO\n");
+            }
+            count=0;
+    }
 
+    return 0;
+}
