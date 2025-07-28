@@ -242,7 +242,7 @@ if(distance == 0){
 return 0;
 }
 */
-#include<stdio.h>
+/*#include<stdio.h>
 int main(){
     long long a,b;
     long long count;
@@ -263,3 +263,97 @@ int main(){
 
     return 0;
 }
+    */
+/*#include<stdio.h>
+int main(){
+long long n,x;
+long long box;
+scanf("%lld%lld",&n,&x);
+long long arr[n];
+for(long long i=0;i<n;i++){
+    scanf("%lld",&arr[i]);
+    if(arr[i]%x==0){
+box = i+1;
+    }
+}
+box += 2;
+if(box==n){
+    printf("Yeee! Argentina\n");
+} else{
+    printf("Messi missed the penalty!\n");
+}
+    return 0;
+}*/
+/*
+#include<stdio.h>
+int main(){
+int n;
+scanf("%d",&n);
+if(n==0){
+    printf("The Universe of our Hero\n");
+} else if(n%2==0){
+    printf("The Universe of Spider-Man 1\n");
+} else{
+    printf("The Universe of Spider-Man 2\n");
+}
+
+    return 0;
+}
+    */
+/*#include<stdio.h>
+int main(){
+long long a,b,c;
+scanf("%lld%lld%lld",&a,&b,&c);
+a = ((a*b)+c);
+printf("%d",a);
+    return 0;
+}*/
+/*#include<stdio.h>
+int main(){
+    int arr[4];
+    int count=0;
+    for(int i=0;i<4;i++){
+        scanf("%d",&arr[i]);
+        if(arr[i]==1){
+            count++;
+        }
+    }
+        if(arr[0]==1){
+            printf("YES\n");
+        }
+        else if(count>1){
+            printf("YES\n");
+        } else{
+            printf("NO\n");
+        }
+     
+    return 0;
+}*/
+/*#include<stdio.h>
+int main(){
+long long a,b;
+scanf("%lld%lld",&a,&b);
+long long arr[a];
+int count=0;
+long long box;
+for(long long i=0;i<a;i++){
+    scanf("%lld",&arr[i]);
+} for(long long j=0;j<a;j++){
+for(long long i=0;i<a;i++){
+    if(i != j){
+    box=arr[j]+arr[i];
+    if(box>=b){
+        count += 1;
+        break;
+    }
+}
+}
+}
+if (count >= 1){
+    printf("YES\n");
+}  else{
+    printf("NO\n");
+}
+    return 0;
+}*/
+
