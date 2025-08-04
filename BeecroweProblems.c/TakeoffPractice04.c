@@ -356,7 +356,7 @@ if (count >= 1){
 }
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int n;
@@ -377,7 +377,7 @@ int main()
                 {
                     count += 1;
                     break;
-                }               
+                }
             }
         }
             if(count>=1){
@@ -387,6 +387,27 @@ int main()
             }
             count=0;
     }
+
+    return 0;
+} */
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    char str[n];
+    int count = 0;
+    scanf("%s", str);
+
+    for (int i = 0; i < n; i++)
+    {
+        if (str[i] == 'T')
+        {
+            count++;
+        }
+    }
+    printf("%d", count);
 
     return 0;
 }
