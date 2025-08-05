@@ -4,19 +4,28 @@ int main()
 {
     char str1[10001];
     scanf("%s", str1);
-    int count=0;
+    int count = 0;
     for (int i = 0; str1[i] != '\0'; i++)
     {
-        for (int j = i + 1; str1[j] != '\0'; j++)
+        int word = 1;
+        for (int j = 0; j < i; j++)
         {
             if (str1[i] == str1[j])
             {
-                count++;
+                 word = 0;
+                 break;
             }
         }
-        
+        if (word == 1)
+        {
+            count++;
+        }
     }
-    printf("%d",count);
-    
+    if(count %2==0){
+        printf("CHAT WITH HER!\n");
+    } else{
+        printf("IGNORE HIM!\n");
+    }
+
     return 0;
 }
