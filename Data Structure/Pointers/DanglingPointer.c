@@ -9,3 +9,4 @@ ptr=fun();
 printf("%d",*ptr);
 return 0;
 }
+/
