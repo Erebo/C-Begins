@@ -1,0 +1,39 @@
+# ===== C / C++ Build Files =====
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.a
+*.lib
+
+# ===== Temporary / Backup Files =====
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.log
+*.cache
+*.pid
+
+# ===== Build / Output Folders =====
+/build/
+/bin/
+/Debug/
+/Release/
+/dist/
+
+# ===== VS Code =====
+.vscode/
+*.code-workspace
+
+# ===== System Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Other =====
+*.old
+*.orig
