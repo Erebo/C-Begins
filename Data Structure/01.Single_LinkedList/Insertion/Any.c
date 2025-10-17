@@ -38,12 +38,13 @@ void createNewnode()
         }
         i->next = newnode;
     }
-}
+} // In the insert Any section i need to implement two edge cases (1) What if there is no such element after which i want to insert . 
+// Second one is what if the insertAny is the first element of the node !
 void insertAny(){
     int x,pos;
     printf("Enter the new data :");
     scanf("%d",&x);
-    printf("Enete the element after which you want to insert the new data :");
+    printf("Eneter the element after which you want to insert the new data :");
     scanf("%d",&pos);
     struct student *newnode;
     newnode=(struct student*)malloc(sizeof(struct student));
@@ -68,7 +69,7 @@ int main()
     createNewnode();
     print();
     createNewnode();
-    print();
+    print(); 
     insertAny();
     print();
 
