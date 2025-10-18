@@ -35,7 +35,10 @@ void deleteFirst(){
     if(head==NULL){
         printf("There's nothing to delete");
     } else{
+        struct student *i=head;
         head=head->next;
+        free(i);
+        
     }
     
 }
