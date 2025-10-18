@@ -35,19 +35,21 @@ void deleteLast(){
     if(head == NULL){
         printf("There's nothing to delete.");
     } else if(head->next==NULL){
+        free(head);
         head=NULL;
     } else{
     struct student*i=head;
     while(i->next->next != NULL){
         i=i->next;
     }
+    free(i->next);//free the last node
     i->next=NULL;
 }
 }
 int main(){
-    /*createNewnode();
     createNewnode();
-    createNewnode();*/
+    createNewnode();
+    createNewnode();
     createNewnode();
     print();
     deleteLast();
