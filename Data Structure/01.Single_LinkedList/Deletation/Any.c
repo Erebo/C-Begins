@@ -50,17 +50,28 @@ void deleteAny()
     }
     else if (head->data == x)
     {
+        struct student *i = head;
         head = head->next;
+        free(i);
     }
     else
     {
         {
             struct student *i = head;
-            while (i->next->data != x)
+            while (i->next != NULL && i->next->data != x)
             {
                 i = i->next;
             }
-            i->next = i->next->next;
+            if (i->next == NULL)
+            {
+                printf("There's no such data to delete.\n");
+            }
+            else
+            {
+                struct student *temp = i->next;
+                i->next = i->next->next;
+                free(temp);
+            }
         }
     }
 }
