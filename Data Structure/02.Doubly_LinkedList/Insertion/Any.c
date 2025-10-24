@@ -51,22 +51,41 @@ void LinkedlistCreation()
     head = s1;
     tail = s3;
 }
-void insertNewnode()
+void insertAny()
 {
+    char word1[50];
+    printf("Enter the characters for the newnode :");
+    scanf("%s", word1);
+    float num;
+    printf("Enter the data for newnode : ");
+    scanf("%f", &num);
+    char target[50];
+    printf("Enter the data after which you want to insert : ");
+    scanf("%s", target);
     struct Node *newnode;
     newnode = (struct Node *)malloc(sizeof(struct Node));
-    strcpy(newnode->word, "MNP");
-    newnode->data = 30.01;
+    strcpy(newnode->word, word1);
+    newnode->data = num;
     newnode->pre = NULL;
     newnode->next = NULL;
+
     struct Node *i = head;
-    while (i != NULL && strcmp(i->word, "XYZ") != 0)
+    while (i != NULL && strcmp(i->word, target) != 0)
     {
         i = i->next;
     }
+    if (i == NULL)
+    {
+        printf("There's no such data !\n");
+    }
     newnode->pre = i;
     newnode->next = i->next;
-    i->next->pre = newnode;
+    if (i->next != NULL)
+        i->next->pre = newnode;
+    else
+    {
+        tail = newnode;
+    }
     i->next = newnode;
 }
 int main()
@@ -74,7 +93,8 @@ int main()
     LinkedlistCreation();
     straightprint();
     reverseprint();
-    insertNewnode();
+    straightprint();
+    insertAny();
     straightprint();
     reverseprint();
 }
