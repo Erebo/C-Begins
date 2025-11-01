@@ -51,6 +51,7 @@ void pop()
     }
     else if (head->next == NULL)
     {
+        free(head);
         head = NULL;
     }
     else
@@ -60,6 +61,7 @@ void pop()
         {
             i = i->next;
         }
+        free(i->next);
         i->next = NULL;
     }
 }
