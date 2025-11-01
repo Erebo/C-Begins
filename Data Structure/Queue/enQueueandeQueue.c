@@ -35,12 +35,14 @@ void deQueue()
     else
     {
         if (head->next == NULL)
-        {
+        {   free(head);
             head = NULL;
         }
         else
-        {
+        {   
+            struct node*temp=head; 
             head = head->next;
+            free(temp);
         }
     }
 }
