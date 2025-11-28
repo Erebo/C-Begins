@@ -62,9 +62,15 @@ int main()
     root->right = createNode(30);
     root->left->left = createNode(40);
     root->left->right = createNode(50);
+    printf("Pre Oder: ");
     printPreoder(root);
+    printf("\n");
+    printf("In Oder: ");
     printInoder(root);
+    printf("\n");
+    printf("Post Oder: ");
     printPostoder(root);
+    printf("\n");
 
     return 0;
 }
