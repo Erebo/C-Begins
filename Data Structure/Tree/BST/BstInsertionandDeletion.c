@@ -86,4 +86,6 @@ int main() {
     deleteBST(root, 5);
     printf("\n");
     printInorder(root);
+
+    return 0;
 }
