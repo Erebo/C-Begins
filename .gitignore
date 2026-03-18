@@ -1,6 +1,81 @@
+# =========================
+
+# Compiled binaries
+
+# =========================
+
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Object files
+
+*.o
+*.obj
+
+# =========================
+
+# Logs & temp files
+
+# =========================
+
 *.log
 *.tmp
-*.exe
+*.temp
+*~
+
+# =========================
+
+# Build directories
+
+# =========================
+
 /build/
+/bin/
+/dist/
+
+# =========================
+
+# VS Code
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Node (if used)
+
+# =========================
+
 /node_modules/
-Loop.c/TahmidProblem1.exe
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# CMake (if used later)
+
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# =========================
+
+# Specific unwanted file
+
+# =========================
